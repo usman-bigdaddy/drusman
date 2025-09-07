@@ -34,11 +34,10 @@ const infoItems: InfoItem[] = [
 
 export default function About() {
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const element = document.querySelector<HTMLElement>(href);
+  element?.scrollIntoView({ behavior: "smooth" });
+};
+
 
   return (
     <section id="about" className="py-20 bg-white">
