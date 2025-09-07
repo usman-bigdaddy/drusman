@@ -6,10 +6,8 @@ import { Mail, Download, Award } from "lucide-react";
 
 export default function Hero() {
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    const element = document.querySelector<HTMLElement>(href);
+    element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
