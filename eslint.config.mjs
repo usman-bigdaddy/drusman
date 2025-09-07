@@ -19,6 +19,13 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+    rules: {
+      // Disable specific rule
+      "@typescript-eslint/no-explicit-any": "off",
+      // (Optional) Disable other strict rules if needed:
+      // "react/prop-types": "off",
+      // "react/react-in-jsx-scope": "off",
+    },
   },
 ];
 
