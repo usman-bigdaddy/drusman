@@ -317,7 +317,7 @@ export default function Publications() {
                       {pub.title}
                     </h4>
                     <p className="text-gray-600 italic mb-3">
-                      Co-author(s){pub.authors}
+                      Co-author(s): {pub.authors}
                     </p>
                     <p className="text-gray-800 font-semibold mb-4">
                       {pub.venue}
